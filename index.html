@@ -112,9 +112,29 @@
         <li>Ctrl+e</li>
       </ul>
 
-      <h3>clear full line</h3>
+      <h3>clears line</h3>
       <ul>
         <li>Ctrl+u</li>
+      </ul>
+
+      <h3>history file location</h3>
+      <ul>
+        <li>cat .bash_history</li>
+        <li>echo $HISTFILESIZE //'maximum history size in file'</li>
+        <li>echo $HISTSIZE //'maximum memory size'</li>
+        <li>history</li>
+        <li>!3 //'specific command from history'</li>
+        <li>!! // 'last command from history'</li>
+        <li>!-3 //'last third command</li>
+        <li>!3:p //'just print third command from history'</li>
+        <li>history -d 191 //'to remove specific command from history'</li>
+        <li>history -c //'clear entire history'</li>
+        <li>echo $HISTCONTROL //'to see history controller</li>
+        <li>
+          $HISTCONTROL=ignoreboth // 'to set not to save duplicate history
+        </li>
+        <li>one space bar + any command //'to not save in history'</li>
+        <li>HISTTIMEFORMAT='%d/%m/%y %T' //'to set show time with history'</li>
       </ul>
     </div>
   </body>
