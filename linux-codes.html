@@ -12,11 +12,110 @@
     <div class="main_container">
       <h1>Linux Code</h1>
       <h3>Update</h3>
-      <li>sudo apt update</li>
+      <ul>
+        <li>sudo apt update</li>
+      </ul>
       <h3>install app</h3>
-      <li>sudo apt install terminator</li>
+      <ul>
+        <li>sudo apt install terminator</li>
+      </ul>
       <h3>root mode</h3>
-      <li>sudo su</li>
+      <ul>
+        <li>sudo su</li>
+      </ul>
+
+      <h3>Reset login user password</h3>
+      <ul>
+        <li>restart</li>
+        <li>when you see 'GRUB' menu, press the 'e' key</li>
+        <li>scroll down when line begins with 'linux'</li>
+        <li>bring the cursor to 'ro' and change it 'ro' to 'rw'</li>
+        <li>
+          bring cursor forward to 'quiet splash'and delete remaining words and
+          type 'quiet splash inti=/bin/bash'
+        </li>
+        <li>Press Ctrl+x or F10 to boot</li>
+        <li>In Console change the user password</li>
+        <li>passwd 'username'</li>
+
+        <li>poweroff -f</li>
+      </ul>
+
+      <h3>Test Connection</h3>
+      <ul>
+        <li>ping -c 4 8.8.8.8</li>
+        <li>ping -c4 127.0.0.1</li>
+      </ul>
+
+      <h3>Show all child items</h3>
+      <ul>
+        <li>ls -lha /etc</li>
+        <li>ls -la --human-readable /etc</li>
+      </ul>
+
+      <h3>Show information about file system size in GB</h3>
+      <ul>
+        <li>df -h</li>
+        <li>df -h /dev</li>
+      </ul>
+
+      <h3>Get help for commands</h3>
+      <ul>
+        <li>ls --help</li>
+        <li>
+          man ls
+
+          <ul>
+            <span>Inside man page</span>
+            <li>press 'h' to get more help</li>
+            <li>
+              to search press '/' and type word to search
+              <ul>
+                <li>'n' to next search</li>
+                <li>'shift+n' to previous search</li>
+              </ul>
+            </li>
+            <li>'shift+g' to go first line</li>
+            <li>'g' to go last line</li>
+          </ul>
+        </li>
+        <li>man -k 'copy file'</li>
+      </ul>
+
+      <h3>get ip address</h3>
+      <ul>
+        <li>ifconfig</li>
+        <li>ip address</li>
+        <li>ip a</li>
+        <li>
+          if ifconfig not installed
+          <ul>
+            <li>sudo apt install net-tools</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>shortcut</h2>
+      <h3>open terminal and close</h3>
+      <ul>
+        <li>alt+t</li>
+        <li>ctrl+d</li>
+      </ul>
+
+      <h3>Clear terminal</h3>
+      <ul>
+        <li>clear</li>
+        <li>Ctrl+l</li>
+      </ul>
+      <h3>Move cursor to Beginning and End of the line</h3>
+      <ul>
+        <li>Ctrl+a</li>
+        <li>Ctrl+e</li>
+      </ul>
+
+      <h3>clear full line</h3>
+      <ul>
+        <li>Ctrl+u</li>
+      </ul>
     </div>
   </body>
 </html>
