@@ -135,7 +135,58 @@
         </li>
         <li>one space bar + any command //'to not save in history'</li>
         <li>HISTTIMEFORMAT='%d/%m/%y %T' //'to set show time with history'</li>
+        <li>
+          echo 'HISTTIMEFORMAT="%d/%m/%y %T"' >> .bashrc #to set permanent in
+          RAM
+        </li>
       </ul>
+
+      <h3>root user</h3>
+      <ul>
+        <li>sudo su #switch normal user to root privilege</li>
+        <li>id</li>
+        <li>sudo -k #clear sudo cache</li>
+        <li>sudo passwd root #to set root password</li>
+        <li>su #login as root after set the root password</li>
+      </ul>
+
+      <h3>Simple python hello app</h3>
+      <ul>
+        <li>nano hello.py</li>
+        <li>
+          Inside nano editor
+          <ul>
+            <li>#!user/bin/env python3</li>
+            <li>print('Hello World!')</li>
+          </ul>
+        </li>
+        <li>save and exit from nano editor</li>
+        <li>chmod +x hello.py</li>
+        <li>python3 hello.py</li>
+      </ul>
+
+      <h3>Change mac address linux</h3>
+      <ul>
+        <li>ifconfig</li>
+        <li>ifconfig eth0 down</li>
+        <li>ifconfig eth0 hw ether 00:11:22:33:44:55</li>
+        <li>ifconfig eth0 up</li>
+        <li>ifconfig</li>
+      </ul>
+
+      <h3>python script mac changer</h3>
+      <li>#!/usr/bin/env python3</li>
+
+      <li>import subprocess</li>
+
+      <li>interface = 'enp0s3' or input('Interface: ')</li>
+      <li>new_mac = '00:22:44:66:88:00'</li>
+      <li>subprocess.call("ifconfig "+ interface + " down ", shell=True)</li>
+      <li>
+        subprocess.call("ifconfig "+ interface + " hw ether "+ new_mac,
+        shell=True)
+      </li>
+      <li>subprocess.call("ifconfig "+ interface + " up ", shell=True)</li>
     </div>
   </body>
 </html>
